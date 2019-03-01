@@ -1,9 +1,9 @@
-from flask import jsonify, Blueprint, request
+from flask import jsonify, request
 
 from app.forms.book import SearchForm
 from . import web
-from helper import is_isbn_or_key
-from yushu_book import YuShuBook
+from app.libs.helper import is_isbn_or_key
+from app.spider.yushu_book import YuShuBook
 
 
 # 蓝图blueprint 蓝本
